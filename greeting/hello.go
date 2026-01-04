@@ -1,5 +1,5 @@
 package greeting
 
 func Hello() string {
-	return greeting
+	return `Golang for Brave & ` + developer["Name"];
 }

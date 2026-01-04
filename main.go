@@ -2,10 +2,10 @@ package main
 
 import (
 	"practice/greeting"
-	"fmt"
+	"github.com/fatih/color"
 )
 
 func main() {
-	fmt.Println(greeting.Hello())
+	color.Green(greeting.Hello())
 };
 

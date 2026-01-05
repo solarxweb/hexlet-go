@@ -1,7 +1,7 @@
 package main
 
 import (
-	"practice/greeting"
+	"practice/v2/greeting"
 	"github.com/fatih/color"
 )
 

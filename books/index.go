@@ -7,6 +7,17 @@ type Book struct {
 	Author string
 }
 
+func showTitle(title string) string {
+	return "Title of this poem is " + title;
+}
+
+func NewBook(title, author string) *Book {
+	nb := new(Book);
+	nb.Title = title;
+	nb.Author = author;
+	return nb;
+}
+
 func GetAuthorCreation(creations [5]Book, author string) ([]string, error) {
 	creationsSlice := []Book{};
 	if len(creations) == 0 {
@@ -28,7 +39,7 @@ func GetAuthorCreation(creations [5]Book, author string) ([]string, error) {
 	}
 	
 	return filteredSlice, nil;
-
+}
 
 func (b Book) Description() string {
 	return fmt.Sprintf("%s - %s", b.Title, b.Author);

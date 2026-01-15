@@ -1,4 +1,4 @@
-module practice/v2
+module github.com/solarxweb/hexlet-go
 
 go 1.25.5
 
